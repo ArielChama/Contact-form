@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #D5E1EF;
+  font-family: "Karla", sans-serif;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.success-banner {
+  display: none;
+  background-color: hsl(187, 24%, 22%);
+  color: white;
+  padding: 1rem;
+  position: fixed;
+  width: 20%;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+.success-banner p {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  background-color: #fff;
+  width: 30%;
+  padding: 2rem;
+  border-radius: 20px;
+  margin-bottom: 2rem;
+  margin-top: 3rem;
+}
+
+.forms-inputs {
+  display: flex;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.form-name {
+  width: 50%;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid hsl(186, 15%, 59%);
+  margin-bottom: 1rem;
+  margin-top: 0.6rem;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: hsl(169, 82%, 27%);
+}
+
+fieldset {
+  border: transparent;
+}
+
+.type-query {
+  width: 50%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid hsl(186, 15%, 59%);
+  margin-bottom: 1rem;
+}
+
+.button {
+  background-color: hsl(169, 82%, 27%);
+  color: #fff;
+  padding: 10px;
+  border: transparent;
+  border-radius: 5px;
+  width: 100%;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+button:focus,
+button:hover {
+  background-color: hsl(169, 82%, 20%);
+}
+
+.error {
+  color: red;
+  font-size: 0.875em;
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .card {
+    width: 80%;
+  }
+
+  .forms-inputs {
+    flex-direction: column;
+  }
+
+  .form-name,
+  .type-query {
+    width: 100%;
+    margin-right: 0;
+  }
+}
