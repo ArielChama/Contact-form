@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+    rel="stylesheet">
+  <title>Frontend Mentor | Contact form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #D5E1EF;
+      font-family: "Karla", sans-serif;
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    .main {
+      display: flex;
+      justify-content: center;
+    }
+
+    .card {
+      background-color: #fff;
+      width: 30%;
+      padding: 2rem;
+      border-radius: 20px;
+      margin-bottom: 2rem;
+      margin-top: 3rem;
+    }
+
+    .forms-inputs {
+      display: flex;
+      width: 100%;
+      margin-top: 1rem;
+    }
+
+    .form-name {
+      width: 50%;
+    }
+
+    .form-input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid hsl(186, 15%, 59%);
+      margin-bottom: 1rem;
+      margin-top: 0.6rem;
+    }
+
+    .type-query {
+      width: 50%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid hsl(186, 15%, 59%);
+    }
+
+    .button {
+      background-color: hsl(169, 82%, 27%);
+      color: #fff;
+      padding: 10px;
+      border: transparent;
+      border-radius: 5px;
+      width: 100%;
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main">
+    <div class="card">
+      <h1>
+        Contact Us
+      </h1>
+      <form action="">
+        <div class="forms-inputs">
+          <div class="form-name" style="margin-right: 10px;">
+            <legend>First Name</legend>
+            <input type="text" class="form-input">
+          </div>
+
+          <div class="form-name">
+            <legend>Last Name</legend>
+            <input type="text" class="form-input">
+          </div>
+        </div>
+
+        <legend>Email Address</legend>
+        <input type="text" class="form-input">
+        Please enter a valid email address
+        <!--This field is required-->
+
+        <legend>Query Type</legend>
+        Please select a query type
+
+        <div class="forms-inputs">
+          <div class="type-query" style="margin-right: 10px;">
+            <input type="radio" name="" id="">
+            General Enquiry
+          </div>
+
+          <div class="type-query">
+            <input type="radio" name="" id="">
+            Support Request
+          </div>
+        </div>
+
+
+        Message
+        This field is required
+        <textarea name="" id="" class="form-input"></textarea>
+
+        <p>
+          <input type="checkbox" name="" id="">I consent to being contacted by the team
+        </p>
+
+        <button type="submit" class="button">
+          Submit
+        </button>
+
+        To submit this form, please consent to being contacted
+
+        Message Sent!
+        Thanks for completing the form. We'll be in touch soon!
+      </form>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+
+</html>
